@@ -24,7 +24,7 @@ body{
 
 .boxColor
 {
-  background-color:rgb(32, 32, 32);
+  background-color:rgb(32, 32, 32)!important;
 }
 .headerColor{
   background-color: rgb(151, 148, 148);
