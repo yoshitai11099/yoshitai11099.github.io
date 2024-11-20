@@ -30,7 +30,7 @@ const Home: React.FC = () => {
           </div>
         </div>
 
-        <div className="row g-0 font" style={{ marginBottom: "40px" }}>
+        <div className="row g-0 font" style={{ marginBottom: "40px", color:"white" }}>
           <div className="col-md-4">
             <Skills />
           </div>
