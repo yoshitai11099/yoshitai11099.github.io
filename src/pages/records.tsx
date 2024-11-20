@@ -9,8 +9,7 @@ const trackfield: React.FC = () => {
     ];
 
     return (
-
-        <div style={{ marginTop: "40px", color:"white"}}>
+        <div style={{ marginTop: "40px"}}>
             <div className="boxColor card headerColor w-75 mx-auto textColor opacity border-warning rounded">
                 <h1 style={{ textDecoration: 'underline', marginBottom: "20px", marginLeft:"15px"}}>Records</h1>
                 {/* 最初のリスト */}
@@ -24,7 +23,6 @@ const trackfield: React.FC = () => {
                 <p style={{marginLeft:"15px"}}>(): 高校記録</p>
             </div>
         </div>
-
     );
 }
 

@@ -11,7 +11,7 @@ const Home: React.FC = () => {
   return (
     <MainLayout>
       <div>
-        <div className="boxColor card headerColor w-75 mx-auto textColor opacity border-warning rounded" style={{color:"white"}} >
+        <div className="boxColor card headerColor w-75 mx-auto textColor opacity border-warning rounded" >
           <h1 className="text-decoration-underline" style={{ marginLeft: "15px" }}>About me</h1>
           <div className="row g-0 font">
             <div className="col-md-6">
@@ -30,14 +30,14 @@ const Home: React.FC = () => {
           </div>
         </div>
 
-        <div className="row g-0 font" style={{ marginBottom: "40px", color:"white" }}>
-          <div className="col-md-4">
+        <div className="row g-0 font" style={{ marginBottom: "40px"}}>
+          <div className="col-md-4 textColor">
             <Skills />
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 textColor">
             <TrackField />
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 textColor">
             <Contact />
           </div>
         </div>
