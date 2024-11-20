@@ -169,3 +169,7 @@ a.secondary {
     filter: invert();
   }
 }
+
+.textColor{
+  color: rgb(255, 255, 255)!important;
+}
