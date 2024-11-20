@@ -11,7 +11,7 @@ const Home: React.FC = () => {
   return (
     <MainLayout>
       <div>
-        <div className="boxColor card headerColor w-75 mx-auto textColor opacity border-warning rounded" >
+        <div className="boxColor card headerColor w-75 mx-auto textColor opacity border-warning rounded" style={{color:"white"}} >
           <h1 className="text-decoration-underline" style={{ marginLeft: "15px" }}>About me</h1>
           <div className="row g-0 font">
             <div className="col-md-6">

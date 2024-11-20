@@ -10,7 +10,7 @@ const trackfield: React.FC = () => {
 
     return (
 
-        <div style={{ marginTop: "40px" }}>
+        <div style={{ marginTop: "40px", color:"white"}}>
             <div className="boxColor card headerColor w-75 mx-auto textColor opacity border-warning rounded">
                 <h1 style={{ textDecoration: 'underline', marginBottom: "20px", marginLeft:"15px"}}>Records</h1>
                 {/* 最初のリスト */}
