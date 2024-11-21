@@ -6,8 +6,8 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 const myNavbar: React.FC = () => {
     return (
         <>
-            {['sm'].map((expand, index) => ( // マップ関数の第二引数にインデックスを追加
-                <Navbar key={index} expand={expand} className="mb-3" bg="dark" variant="dark"> {/* keyプロパティを追加 */}
+            {['sm'].map((expand, index) => (
+                <Navbar key={index} expand={expand} className="mb-3" bg="dark" variant="dark">
                     <Container fluid>
                         <Navbar.Brand href="/" className="text-white fw-bold fs-3">Taiki's Portfolio</Navbar.Brand>
                         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`}></Navbar.Toggle>

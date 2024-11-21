@@ -11,25 +11,25 @@ const Works: React.FC = () => {
     const worksList = [
         {
             title: "富山方便クイズ",
-            technical: "▫️ Processing, p5.js",
+            technical: "▫️ Processing、p5.js",
             image: "/images/toyamaQuiz.png",
-            about: "　富山を知ってもらう目的で作成した富山方便に関するクイズアプリ．この意味を持つ方便はどれかを答える「３択クイズ」「入力式クイズ」，２人の会話で自然な流れになるように空欄の枠に入るセリフを答える「会話型クイズ」があり，合計で115問搭載．"
+            about: "　富山を知ってもらう目的で作成した富山方便に関するクイズアプリ。この意味を持つ方便はどれかを答える「３択クイズ」「入力型クイズ」、２人の会話で自然な流れになるように空欄の枠に入るセリフを答える「会話型クイズ」があり、合計で115問搭載。"
         },
         {
             title: "マルチカラーボトル",
-            technical: "▫️ ESP32, Arduino IDE, センサ（傾き，回転角度，温度）",
-            about: "　マイコンとセンサを扱えるようになることを目的とした，ボトル内に螺旋状に設置されたLEDを回転角度センサにて光らせるイルミネーション風の作品．デバイス本体を傾けたり，外界温度によってLEDの光色が変化する．"
+            technical: "▫️ ESP32、Arduino IDE、センサ（傾き、回転角度、温度）",
+            about: "　マイコンとセンサを扱えるようになることを目的とした、ボトル内に螺旋状に設置されたLEDを回転角度センサにて光らせるイルミネーション風の作品。デバイス本体を傾けたり、外界温度によってLEDの光色が変化する。"
         },
         {
             title: "アスレチック型ゲーム",
             technical: "▫️ Unity3D",
-            about: "　ゲーム開発に興味を持ち，Unityで初めて作成したアスレチックゲーム．この取り組みからゲームの基本となる「画面遷移」「キー入力」「アイテム管理」「クリア，ミス判定」などの実装方法を学んだ．"
+            about: "　ゲーム開発に興味を持ち、Unityで初めて作成したアスレチックゲーム。この取り組みからゲームの基本となる「画面遷移」「キー入力」「アイテム管理」「クリア、ミス判定」などの実装方法を学んだ。"
         },
         {
             title: "半拘束型力触覚提示デバイス",
-            technical: "▫️ Unity3D, Arduino UNO, Arduino IDE, フォトリフレクタ, HMD",
+            technical: "▫️ Unity3D、Arduino UNO、Arduino IDE、フォトリフレクタ、HMD",
             image: "/images/study.png",
-            about: "　卒業研究テーマ．リアル手指をわずかにしか動かせない状態（半拘束状態）を作りだし，その状態下での手指のわずかな動きからユーザの運動意図を読み取り，アバター手指を操作する手法を用いる力触覚提示デバイスの実現を目指す．本手法を用いることで，リアル手への複数箇所への力触覚提示が容易となり，デバイスの低価格化や遠隔での技術伝達の効率化などが図れる．",
+            about: "　卒業研究テーマ。リアル手指をわずかにしか動かせない状態（半拘束状態）を作りだし、その状態下での手指のわずかな動きからユーザの運動意図を読み取り、アバター手指を操作する手法を用いる力触覚提示デバイスの実現を目指す。本手法を用いることで、リアル手への複数箇所への力触覚提示が容易となり、デバイスの低価格化や遠隔での技術伝達の効率化などが図れる。",
             reference:"▫️ 吉田大葵，田川和義，半拘束型掌力触覚提示デバイスの基礎的検討 -示指の多様な動きへの対応化，第29回日本バーチャルリアリティ学会論文集，3D2-07，2024",
         }
     ];
@@ -46,7 +46,6 @@ const Works: React.FC = () => {
                                 <p style={{ marginRight: '20px' }}>{works.technical}</p>
                                 {works.image && (
                                     <div>
-                                        {/* 通常画像 */}
                                         <div
                                             style={{
                                                 marginBottom: '15px',
@@ -54,9 +53,9 @@ const Works: React.FC = () => {
                                                 cursor: 'pointer',
                                             }}
                                             onClick={() => {
-                                                setSelectedImage(works.image); // クリックした画像をセット
-                                                setSelectedIndex(index); // クリックした画像のインデックスをセット
-                                                setModalOpen(true); // モーダルを開く
+                                                setSelectedImage(works.image); 
+                                                setSelectedIndex(index); 
+                                                setModalOpen(true); 
                                             }}
                                         >
                                             <Image
@@ -67,8 +66,6 @@ const Works: React.FC = () => {
                                                 style={{ objectFit: 'contain' }}
                                             />
                                         </div>
-
-                                        {/* モーダル */}
                                         {isModalOpen && selectedImage && selectedIndex === index && (
                                             <div
                                                 style={{
@@ -77,21 +74,21 @@ const Works: React.FC = () => {
                                                     left: 0,
                                                     width: '100vw',
                                                     height: '100vh',
-                                                    backgroundColor: 'rgba(0, 0, 0, 0.8)', // 背景を暗くする
+                                                    backgroundColor: 'rgba(0, 0, 0, 0.8)',
                                                     display: 'flex',
                                                     justifyContent: 'center',
                                                     alignItems: 'center',
                                                     zIndex: 1000,
                                                 }}
-                                                onClick={() => setModalOpen(false)} // 背景クリックで閉じる
+                                                onClick={() => setModalOpen(false)} 
                                             >
                                                 <img
                                                     src={selectedImage}
                                                     alt=""
                                                     style={{
                                                         objectFit: 'contain',
-                                                        width: '80vw', // 画面幅の80%に設定
-                                                        height: '80vh', // 画面高さの80%に設定
+                                                        width: '80vw', 
+                                                        height: '80vh',
                                                     }}
                                                 />
                                             </div>

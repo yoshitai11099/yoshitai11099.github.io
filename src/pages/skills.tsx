@@ -1,15 +1,15 @@
 const skills: React.FC = () => {
     const skillsList = [
-        "Unity(3D, VR)",
+        "Unity(3D、VR)",
         "C#",
-        "C++(OpenGL, PHANToM)",
+        "C++(OpenGL、PHANToM)",
         "Python",
         "JavaScript(React.js)",
         "TypeScript(Next.js)",
         "HTML",
         "CSS",
         "Micro Computer (Arduino)",
-        "モデリング (Blender, FlashPrint)",
+        "モデリング (Blender、FlashPrint)",
         "3Dプリント",
     ];
 
@@ -24,7 +24,7 @@ const skills: React.FC = () => {
                         </li>
                     ))}
                 </ul>
-                <p style={{marginLeft:"15px"}}>※ 本ポートフォリオはNext.jsを用いて作成しています．</p>
+                <p style={{marginLeft:"15px"}}>※ 本ポートフォリオはNext.jsを用いて作成しています。</p>
             </div>
         </div>
     );
