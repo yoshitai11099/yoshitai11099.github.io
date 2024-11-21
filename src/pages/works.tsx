@@ -5,6 +5,9 @@ import { useState } from 'react';
 
 const Works: React.FC = () => {
     const [isModalOpen, setModalOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState<string | null>(null);
+    const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+
     const worksList = [
         {
             title: "富山方便クイズ",
@@ -25,7 +28,7 @@ const Works: React.FC = () => {
         {
             title: "半拘束型力触覚提示デバイス",
             reference: "▫️ Unity3D, Arduino UNO, Arduino IDE, フォトリフレクタ, HMD",
-            image:"/images/study.png",
+            image: "/images/study.png",
             about: "　卒業研究テーマ．リアル手指をわずかにしか動けない状態（半拘束状態）を作りだし，その環境下での手指のわずかな動きからユーザの運動意図を読み取り，アバター手指を操作する手法を用いる．これにより，リアル手への複数箇所への力触覚提示が容易となり，遠隔での技術伝達の効率化などが図れる．"
         }
     ];
@@ -37,65 +40,65 @@ const Works: React.FC = () => {
                     <h1 style={{ textDecoration: 'underline', marginBottom: "20px" }}>Works</h1>
                     <ul style={{ lineHeight: "1.5" }}>
                         {worksList.map((works, index) => (
-                            <div key={index} style={{ fontSize: "15px" }}>
+                            <div key={index} style={{ fontSize: '15px' }}>
                                 <h4 className="fw-bold">{works.title}</h4>
-                                <p style={{ marginRight: "20px" }}>{works.reference}</p>
+                                <p style={{ marginRight: '20px' }}>{works.reference}</p>
                                 {works.image && (
                                     <div>
                                         {/* 通常画像 */}
-                                        {works.image && (
-                                            <div
-                                                style={{
-                                                    marginBottom: "15px",
-                                                    marginRight: "15px",
-                                                    cursor: "pointer",
-                                                }}
-                                                onClick={() => setModalOpen(true)} // クリックでモーダルを表示
-                                            >
-                                                <Image
-                                                    src={works.image}
-                                                    alt=""
-                                                    width={200}
-                                                    height={100}
-                                                    style={{ objectFit: "contain" }}
-                                                />
-                                            </div>
-                                        )}
+                                        <div
+                                            style={{
+                                                marginBottom: '15px',
+                                                marginRight: '15px',
+                                                cursor: 'pointer',
+                                            }}
+                                            onClick={() => {
+                                                setSelectedImage(works.image); // クリックした画像をセット
+                                                setSelectedIndex(index); // クリックした画像のインデックスをセット
+                                                setModalOpen(true); // モーダルを開く
+                                            }}
+                                        >
+                                            <Image
+                                                src={works.image}
+                                                alt=""
+                                                width={200}
+                                                height={100}
+                                                style={{ objectFit: 'contain' }}
+                                            />
+                                        </div>
 
                                         {/* モーダル */}
-                                        {isModalOpen && (
+                                        {isModalOpen && selectedImage && selectedIndex === index && (
                                             <div
                                                 style={{
-                                                    position: "fixed",
+                                                    position: 'fixed',
                                                     top: 0,
                                                     left: 0,
-                                                    width: "100vw",
-                                                    height: "100vh",
-                                                    backgroundColor: "rgba(0, 0, 0, 0.8)", // 背景を暗くする
-                                                    display: "flex",
-                                                    justifyContent: "center",
-                                                    alignItems: "center",
+                                                    width: '100vw',
+                                                    height: '100vh',
+                                                    backgroundColor: 'rgba(0, 0, 0, 0.8)', // 背景を暗くする
+                                                    display: 'flex',
+                                                    justifyContent: 'center',
+                                                    alignItems: 'center',
                                                     zIndex: 1000,
                                                 }}
                                                 onClick={() => setModalOpen(false)} // 背景クリックで閉じる
                                             >
                                                 <img
-                                                    src={works.image}
+                                                    src={selectedImage}
                                                     alt=""
-                                                    width={0} // 動的にサイズを決める
-                                                    height={0}
                                                     style={{
-                                                        objectFit: "contain",
-                                                        width: "80vw", // 画面幅の80%に設定
-                                                        height: "80vh", // 画面高さの80%に設定
+                                                        objectFit: 'contain',
+                                                        width: '80vw', // 画面幅の80%に設定
+                                                        height: '80vh', // 画面高さの80%に設定
                                                     }}
                                                 />
                                             </div>
                                         )}
                                     </div>
                                 )}
-                                <p style={{ marginRight: "20px" }}>{works.about}</p>
-                                <hr style={{ marginRight: "20px" }}></hr>
+                                <p style={{ marginRight: '20px' }}>{works.about}</p>
+                                <hr style={{ marginRight: '20px' }} />
                             </div>
                         ))}
                     </ul>
