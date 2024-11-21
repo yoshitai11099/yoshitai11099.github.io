@@ -2,49 +2,62 @@ import React from 'react';
 import MainLayout from './mainLayout';
 
 const Running: React.FC = () => {
-    // const worksList = [
-    //     {
-    //         title:"富山方便クイズ",
-    //         reference:"▫️ Processing, p5.js",
-    //         image1:"",
-    //         image2:"",
-    //         about:"　富山を知ってもらう目的で作成した富山方便に関するクイズアプリ．この意味を持つ方便はどれかを答える「３択クイズ」「入力式クイズ」，２人の会話で自然な流れになるように空欄の枠に入るセリフを答える「会話型クイズ」があり，合計で115問搭載．"
-    //     },
-    //     {
-    //         title:"マルチカラーボトル",
-    //         reference:"▫️ ESP32, Arduino IDE, センサ（傾き，回転角度，温度）",
-    //         about:"　マイコンとセンサを扱えるようになることを目的とした，ボトル内に螺旋状に設置されたLEDを回転角度センサにて光らせるイルミネーション風の作品．デバイス本体を傾けたり，外界温度によってLEDの光色が変化する．"
-    //     },
-    //     {
-    //         title:"アスレチック型ゲーム",
-    //         reference:"▫️ Unity3D",
-    //         about:"　ゲーム開発に興味を持ち，Unityで初めて作成したアスレチックゲーム．この取り組みからゲームの基本となる「画面遷移」「キー入力」「アイテム管理」「クリア，ミス判定」などの実装方法を学んだ．"
-    //     },
-    //     {
-    //         title:"半拘束型力触覚提示デバイス",
-    //         reference:"▫️ Unity3D, Arduino UNO, Arduino IDE, フォトリフレクタ, HMD",
-    //         about:"　卒業研究テーマ．リアル手指をわずかにしか動けない状態（半拘束状態）を作りだし，その環境下での手指のわずかな動きからユーザの運動意図を読み取り，アバター手指を操作する手法を用いる．これにより，リアル手への複数箇所への力触覚提示が容易となり，遠隔での技術伝達の効率化などが図れる．"
-    //     }
-    // ];
+    const runningsList = [
+        {
+            title:"800m",
+            record:"2.05.79",
+            about:"▫️ 第75回富山県民体育大会（2022/07.16〜07.17)"
+        },
+        {
+            title:"1000m",
+            record:"2.48.95 (全体3位)",
+            about:"▫️ 2024桃山チャレンジ (2024.09.01)",
+        },
+        {
+            title:"1500m",
+            record:"4.24.96",
+            about:"▫️ 2023年度第5回富山大学記録会 (2023.11.11)",
+        },
+        {
+            title:"マラソン (42.195km)",
+            record1:"6:04:37 (8357位/9526)",
+            about1:"▫️ 富山マラソン2022 (2022.11.06)",
+            record2:"3:22:54 (778位/9932)",
+            about2:"▫️ 富山マラソン2023 (2023.11.03)", 
+            record3:"3:20:44 (572位/10279)",
+            about3:"▫️ 富山マラソン2024 (2024.11.03)",
+        },
+        {
+            title:"リレーマラソン",
+            record:"1:01:56 (1位/35)",
+            about:"チーム：「俺たちのタータン」",
+            about2:"▫️ 第2回つるぎハーフリレーマラソン (2024.11.17)", 
+        }
+    ];
 
     return (
         <MainLayout>
-            {/* <div style={{ marginTop: "40px" }}>
+            <div style={{ marginTop: "40px", color: "white" }}>
                 <div className="boxColor card headerColor w-75 mx-auto textColor opacity">
-                    <h1 style={{ textDecoration: 'underline', marginBottom: "20px" }}>Running</h1>
-                    <ul style={{lineHeight: "1.5" }}>
-                        {worksList.map((works, index) => (
-                            <div key={index} style={{ fontSize: "15px" }}>
-                                <h4 className="fw-bold">{works.title}</h4>
-                                <p style={{marginRight:"20px"}}>{works.reference}</p>
-                                <p style={{marginRight:"20px"}}>{works.about}</p>
-                                <hr style={{marginRight:"20px"}}></hr>
+                    <h1 style={{ textDecoration: 'underline', marginBottom: "20px" }}>Track & Field</h1>
+                    <ul style={{ lineHeight: "1.3" }}>
+                        {runningsList.map((running, index) => (
+                            <div key={index} style={{ fontSize: '18px' }}>
+                                <h4 className="fw-bold">{running.title}</h4>
+                                <p style={{ fontSize: '15px', marginRight: '20px' }}>{running.about}</p>
+                                <p style={{ marginLeft: '20px' }}>{running.record}</p>
+                                <p style={{ fontSize: '15px', marginRight: '20px' }}>{running.about1}</p>
+                                <p style={{ marginLeft: '20px' }}>{running.record1}</p>
+                                <p style={{ fontSize: '15px', marginRight: '20px' }}>{running.about2}</p>
+                                <p style={{ marginLeft: '20px' }}>{running.record2}</p>
+                                <p style={{ fontSize: '15px', marginRight: '20px' }}>{running.about3}</p>
+                                <p style={{ marginLeft: '20px' }}>{running.record3}</p>
+                                <hr style={{ marginRight: '20px' }} />
                             </div>
                         ))}
                     </ul>
                 </div>
-            </div> */}
-            <div style={{ marginTop: "40px", color:"white"}}>作成中</div>
+            </div>
         </MainLayout>
     );
 };

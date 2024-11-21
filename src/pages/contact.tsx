@@ -9,6 +9,7 @@ const contact: React.FC = () => {
     const linksList = [
         { href: 'https://www.instagram.com/taiki_446/', label: 'Instagram' },
         { href: 'https://www.tagawalab.org/', label: "Tagawa Lab"},
+        { href: 'https://toyamarc.jimdoweb.com/', label: "富山ランニングクラブ"},
     ];
 
     return (
