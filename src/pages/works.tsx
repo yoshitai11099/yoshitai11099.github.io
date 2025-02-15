@@ -37,7 +37,7 @@ const Works: React.FC = () => {
     return (
         <MainLayout>
             <div style={{ marginTop: "40px", color: "white" }}>
-                <div className="boxColor card headerColor w-75 mx-auto textColor opacity">
+                <div className="boxColor card headerColor w-75 mx-auto textColor border-primary opacity">
                     <h1 style={{ textDecoration: 'underline', marginBottom: "20px" }}>Works</h1>
                     <ul style={{ lineHeight: "1.5" }}>
                         {worksList.map((works, index) => (

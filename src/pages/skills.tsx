@@ -15,7 +15,7 @@ const skills: React.FC = () => {
 
     return (
         <div style={{ marginTop: "40px"}}>
-            <div className="boxColor card headerColor w-75 mx-auto textColor opacity border-warning rounded">
+            <div className="boxColor card headerColor w-75 mx-auto textColor opacity border-primary rounded">
                 <h1 style={{ textDecoration: 'underline', marginBottom: "20px", marginLeft:"15px", color:"white"}}>Skills</h1>
                 <ul style={{ marginLeft: "5px", marginRight: "5px", lineHeight: "1.5" }}>
                     {skillsList.map((skills, index) => (

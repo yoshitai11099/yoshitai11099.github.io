@@ -11,7 +11,7 @@ const trackfield: React.FC = () => {
 
     return (
         <div style={{ marginTop: "40px"}}>
-            <div className="boxColor card headerColor w-75 mx-auto textColor opacity border-warning rounded">
+            <div className="boxColor card headerColor w-75 mx-auto textColor opacity border-primary rounded">
                 <h1 style={{ textDecoration: 'underline', marginBottom: "20px", marginLeft:"15px"}}>Records</h1>
                 <ul style={{ marginLeft: "5px", marginRight: "5px", lineHeight: "2.0" }}>
                     {recordsList.map((records, index) => (

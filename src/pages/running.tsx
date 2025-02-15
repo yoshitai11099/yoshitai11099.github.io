@@ -44,7 +44,7 @@ const Running: React.FC = () => {
     return (
         <MainLayout>
             <div style={{ marginTop: "40px", color: "white" }}>
-                <div className="boxColor card headerColor w-75 mx-auto textColor opacity">
+                <div className="boxColor card headerColor w-75 mx-auto textColor border-primary opacity">
                     <h1 style={{ textDecoration: 'underline', marginBottom: "20px" }}>Track & Field</h1>
                     <ul style={{ lineHeight: "1.3" }}>
                         {runningsList.map((running, index) => (
