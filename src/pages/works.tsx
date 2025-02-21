@@ -30,15 +30,16 @@ const Works: React.FC = () => {
             technical: "▫️ Unity3D、Arduino UNO、Arduino IDE、フォトリフレクタ、HMD",
             image: "/images/study.png",
             about: "　卒業研究テーマ。リアル手指をわずかにしか動かせない状態（半拘束状態）を作りだし、その状態下での手指のわずかな動きからユーザの運動意図を読み取り、アバター手指を操作する手法を用いる力触覚提示デバイスの実現を目指す。本手法を用いることで、リアル手への複数箇所への力触覚提示が容易となり、デバイスの低価格化や遠隔での技術伝達の効率化などが図れる。",
-            reference:"▫️ 吉田大葵，田川和義，半拘束型掌力触覚提示デバイスの基礎的検討 -示指の多様な動きへの対応化，第29回日本バーチャルリアリティ学会論文集，3D2-07，2024",
+            reference:"▫️ 吉田大葵，田川和義，半拘束型掌力触覚提示デバイスの基礎的検討 -示指の多様な動きへの対応化，第29回日本バーチャルリアリティ学会論文集，3D2-07，Sep.2024",
+            reference2:"▫️ 吉田大葵，田川和義，半拘束状態下における手の位置変化量に基づくアバタ制御，電気学会C部門知的情報研究会，テーマ「知・技の伝承のためのxR技術および一般」，PI-25-014，Mar.2025",
         }
     ];
 
     return (
         <MainLayout>
             <div style={{ marginTop: "40px", color: "white" }}>
-                <div className="boxColor card headerColor w-75 mx-auto textColor border-primary opacity">
-                    <h1 style={{ textDecoration: 'underline', marginBottom: "20px" }}>Works</h1>
+            <div className="mx-auto w-75 textColor">
+                <h1 className="text-decoration-underline text-warning fw-bold" style={{ marginLeft: "15px", marginBottom:"20px"}}>Works</h1>
                     <ul style={{ lineHeight: "1.5" }}>
                         {worksList.map((works, index) => (
                             <div key={index} style={{ fontSize: '15px' }}>
@@ -97,6 +98,7 @@ const Works: React.FC = () => {
                                 )}
                                 <p style={{ marginRight: '20px' }}>{works.about}</p>
                                 <p style={{ fontSize:'10px',marginRight: '20px' }}>{works.reference}</p>
+                                <p style={{ fontSize:'10px',marginRight: '20px' }}>{works.reference2}</p>
                                 <hr style={{ marginRight: '20px' }} />
                             </div>
                         ))}

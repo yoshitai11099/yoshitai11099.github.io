@@ -11,14 +11,15 @@ const Home: React.FC = () => {
   return (
     <MainLayout>
       <div>
-        <div className="boxColor card headerColor w-75 mx-auto textColor opacity border-primary rounded" >
-          <h1 className="text-decoration-underline" style={{ marginLeft: "15px" }}>About me</h1>
+        {/* <div className="boxColor card headerColor mx-auto w-75 textColor opacity border-primary rounded"> */}
+        <div className="mx-auto w-75 textColor">
+          <h1 className="text-decoration-underline text-info fw-bold" style={{ marginLeft: "15px"}}>About me</h1>
           <div className="row g-0 font">
             <div className="col-md-6">
               <div style={{ marginLeft: "20px", marginTop: "20px" }}>
-                <h4 className="fw-bold">吉田大葵(Yoshida Taiki)</h4>
-                <p>▫️ 富山県立大学 B4（田川研究室）<br />▫️ 陸上部<br />▫️ 富山ランニングクラブ(Aチーム・俺たちのタータン)</p>
-                <p style={{ marginLeft: "10px", marginRight: "10px" }}>陸上（主に中距離）とマラソンをしています。マラソンは現在、サブ3（3時間切り）を目指しています。研究分野は、VR（Virtual Reality）と力触覚ディスプレイ（Haptic Display）です。ゲームしたり、たまにゲーム作ったりしてます。</p>
+                <h4>吉田大葵(Yoshida Taiki)</h4>
+                <p style={{marginTop:'20px'}}>▫️ 富山県立大学 B4（田川研究室）<br />▫️ 陸上部<br />▫️ 富山ランニングクラブ(Aチーム・俺たちのタータン)</p>
+                <p className = "small" style={{ marginLeft: "10px", marginRight: "10px" }}>陸上（主に中距離）とマラソンをしています。マラソンは現在、サブ3を目指しています。研究分野は、VR（Virtual Reality）と力触覚（Haptics）です。</p>
               </div>
             </div>
             <div className="col-md-6">
@@ -29,14 +30,14 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="row g-0 font" style={{ marginBottom: "40px"}}>
-          <div className="col-md-4 textColor">
+        <div className="mx-auto font" style={{ marginBottom: "40px"}}>
+          <div className="textColor">
             <Skills />
           </div>
-          <div className="col-md-4 textColor">
+          <div className="textColor">
             <TrackField />
           </div>
-          <div className="col-md-4 textColor">
+          <div className="textColor">
             <Contact />
           </div>
         </div>

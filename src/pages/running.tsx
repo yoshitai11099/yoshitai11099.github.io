@@ -44,8 +44,8 @@ const Running: React.FC = () => {
     return (
         <MainLayout>
             <div style={{ marginTop: "40px", color: "white" }}>
-                <div className="boxColor card headerColor w-75 mx-auto textColor border-primary opacity">
-                    <h1 style={{ textDecoration: 'underline', marginBottom: "20px" }}>Track & Field</h1>
+                <div className="mx-auto w-75 textColor">
+                <h1 className="text-decoration-underline text-warning fw-bold" style={{ marginLeft: "15px", marginBottom:"20px"}}>Track & Field</h1>
                     <ul style={{ lineHeight: "1.3" }}>
                         {runningsList.map((running, index) => (
                             <div key={index} style={{ fontSize: '18px' }}>
