@@ -41,9 +41,6 @@ const Home: React.FC = () => {
           <div className="textColor">
             <Contact />
           </div>
-          <div className="textColor">
-            <Abstract1 />
-          </div>
         </div>
       </div>
     </MainLayout>
