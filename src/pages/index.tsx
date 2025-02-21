@@ -4,6 +4,7 @@ import MainLayout from '../pages/mainLayout';
 import Skills from '../pages/skills';
 import TrackField from './records';
 import Contact from '../pages/contact';
+import Abstract1 from '../pages/abstract1';
 import Image from 'next/image';
 import Zin from '/public/images/zin.png';
 
@@ -39,6 +40,9 @@ const Home: React.FC = () => {
           </div>
           <div className="textColor">
             <Contact />
+          </div>
+          <div className="textColor">
+            <Abstract1 />
           </div>
         </div>
       </div>

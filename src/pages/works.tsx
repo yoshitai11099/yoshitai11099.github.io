@@ -1,6 +1,7 @@
 import React from 'react';
 import MainLayout from './mainLayout';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 
 const Works: React.FC = () => {
@@ -98,7 +99,7 @@ const Works: React.FC = () => {
                                 )}
                                 <p style={{ marginRight: '20px' }}>{works.about}</p>
                                 <p style={{ fontSize:'10px',marginRight: '20px' }}>{works.reference}</p>
-                                <p style={{ fontSize:'10px',marginRight: '20px' }}>{works.reference2}</p>
+                                <Link href="/abstract1"><p style={{ fontSize:'10px',marginRight: '20px' }}>{works.reference2}</p></Link>
                                 <hr style={{ marginRight: '20px' }} />
                             </div>
                         ))}
