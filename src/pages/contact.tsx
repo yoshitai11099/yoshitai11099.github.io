@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const contact: React.FC = () => {
     const skillsList = [
-        "u120049@st.pu-toyama.ac.jp",
+        "u555031@st.pu-toyama.ac.jp",
         "yoshida@tagawalab.org",
     ];
 
