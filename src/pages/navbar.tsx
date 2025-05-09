@@ -9,7 +9,7 @@ const myNavbar: React.FC = () => {
             {['sm'].map((expand, index) => (
                 <Navbar key={index} expand={expand} className="mb-3" bg="dark" variant="dark">
                     <Container fluid>
-                        <Navbar.Brand href="/" className="text-white fw-bold fs-3">Taiki's Portfolio</Navbar.Brand>
+                        <Navbar.Brand href="/" className="text-white fw-bold fs-3">Taiki's Homepage</Navbar.Brand>
                         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`}></Navbar.Toggle>
                        
                         <Navbar.Offcanvas

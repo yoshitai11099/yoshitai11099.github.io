@@ -24,7 +24,7 @@ const skills: React.FC = () => {
                         </li>
                     ))}
                 </ul>
-                <p style={{marginLeft:"15px"}}>※ 本ポートフォリオはNext.jsを用いて作成しています。</p>
+                {/* <p style={{marginLeft:"15px"}}>※ 本ポートフォリオはNext.jsを用いて作成しています。</p> */}
             </div>
         </div>
     );
