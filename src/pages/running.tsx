@@ -26,6 +26,8 @@ const Running: React.FC = () => {
             about2:"▫️ 富山マラソン2023 (2023.11.03)", 
             record3:"3:20:44 (572位/10279)",
             about3:"▫️ 富山マラソン2024 (2024.11.03)",
+            record4:"3:04:57 (164位/4765)",
+            about4:"▫️ 第42回カーター記念黒部名水マラソン (2025.05.25)",
         },
         {
             title:"ハーフマラソン",
@@ -34,9 +36,12 @@ const Running: React.FC = () => {
         },
         {
             title:"リレーマラソン",
-            record:"1:01:56 (1位/35)",
+            record1:"1:01:56 (1位/35)",
             about:"▫️ 第2回つるぎハーフリレーマラソン (2024.11.17)", 
             about2:"チーム：「俺たちのタータン」",
+            record3:"2:16:45 (4位/400)",
+            about3:"▫️ いっちゃん！リレーマラソン2025 (2025.06.01)", 
+            about4:"チーム：「俺たちのタータン」",
         }
         
     ];
@@ -58,6 +63,8 @@ const Running: React.FC = () => {
                                 <p style={{ marginLeft: '20px' }}>{running.record2}</p>
                                 <p style={{ fontSize: '15px', marginRight: '20px' }}>{running.about3}</p>
                                 <p style={{ marginLeft: '20px' }}>{running.record3}</p>
+                                <p style={{ fontSize: '15px', marginRight: '20px' }}>{running.about4}</p>
+                                <p style={{ marginLeft: '20px' }}>{running.record4}</p>
                                 <hr style={{ marginRight: '20px' }} />
                             </div>
                         ))}
