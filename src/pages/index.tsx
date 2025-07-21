@@ -6,6 +6,7 @@ import TrackField from './records';
 import Contact from '../pages/contact';
 import Image from 'next/image';
 import Zin from '/public/images/zin.png';
+import  Awards from '../pages/awards';
 
 const Home: React.FC = () => {
   return (
@@ -19,7 +20,7 @@ const Home: React.FC = () => {
               <div style={{ marginLeft: "20px", marginTop: "20px" }}>
                 <h4>吉田大葵(Yoshida Taiki)</h4>
                 <p style={{marginTop:'20px'}}>▫️ 富山県立大学大学院工学研究科電子・情報工学専攻 修士1年<br />▫️ 陸上部<br />▫️ 富山ランニングクラブ(Aチーム・俺たちのタータン)</p>
-                <p className = "small" style={{ marginLeft: "10px", marginRight: "10px" }}>陸上（主に中距離）とマラソンをしています。マラソンは現在、サブ3を目指しています。研究分野は、VR（Virtual Reality）と力触覚（Haptics）です。</p>
+                <p className = "small" style={{ marginLeft: "10px", marginRight: "10px" }}>研究領域は，VR/Haptics/HCI(Human Computer Interaction)です．研究活動以外では陸上競技をしており，800m，1500mを専門としています．加えて，マラソンにも注力しています．</p>
               </div>
             </div>
             <div className="col-md-6">
@@ -36,6 +37,9 @@ const Home: React.FC = () => {
           </div>
           <div className="textColor">
             <TrackField />
+          </div>
+          <div className="textColor">
+            <Awards />
           </div>
           <div className="textColor">
             <Contact />
