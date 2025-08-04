@@ -20,14 +20,8 @@ const Running: React.FC = () => {
         },
         {
             title:"マラソン (42.195km)",
-            record1:"6:04:37 (8357位/9526)",
-            about1:"▫️ 富山マラソン2022 (2022.11.06)",
-            record2:"3:22:54 (778位/9932)",
-            about2:"▫️ 富山マラソン2023 (2023.11.03)", 
-            record3:"3:20:44 (572位/10279)",
-            about3:"▫️ 富山マラソン2024 (2024.11.03)",
-            record4:"3:04:57 (164位/4765)",
-            about4:"▫️ 第42回カーター記念黒部名水マラソン (2025.05.25)",
+            record:"3:04:57 (164位/4765)",
+            about:"▫️ 第42回カーター記念黒部名水マラソン (2025.05.25)",
         },
         {
             title:"ハーフマラソン",
@@ -36,12 +30,10 @@ const Running: React.FC = () => {
         },
         {
             title:"リレーマラソン",
-            record1:"1:01:56 (1位/35)",
-            about:"▫️ 第2回つるぎハーフリレーマラソン (2024.11.17)", 
-            about2:"チーム：「俺たちのタータン」",
-            record3:"2:16:45 (4位/400)",
-            about3:"▫️ いっちゃん！リレーマラソン2025 (2025.06.01)", 
-            about4:"チーム：「俺たちのタータン」",
+            record:"1:01:56 (1位/35)",
+            about:"▫️ 第2回つるぎハーフリレーマラソン（チーム：俺たちのタータン） (2024.11.17)", 
+            record2:"2:16:45 (4位/400)",
+            about2:"▫️ いっちゃん！リレーマラソン2025（チーム：俺たちのタータン） (2025.06.01)", 
         }
         
     ];
@@ -52,19 +44,14 @@ const Running: React.FC = () => {
                 <div className="mx-auto w-75 textColor">
                 <h1 className="text-decoration-underline text-warning fw-bold" style={{ marginLeft: "15px", marginBottom:"20px"}}>Track & Field</h1>
                     <ul style={{ lineHeight: "1.3" }}>
+                        <p>※ 大学入学以降かつ主要な記録のみ掲載しています．</p>
                         {runningsList.map((running, index) => (
                             <div key={index} style={{ fontSize: '18px' }}>
                                 <h4 className="fw-bold">{running.title}</h4>
                                 <p style={{ fontSize: '15px', marginRight: '20px' }}>{running.about}</p>
                                 <p style={{ marginLeft: '20px' }}>{running.record}</p>
-                                <p style={{ fontSize: '15px', marginRight: '20px' }}>{running.about1}</p>
-                                <p style={{ marginLeft: '20px' }}>{running.record1}</p>
                                 <p style={{ fontSize: '15px', marginRight: '20px' }}>{running.about2}</p>
                                 <p style={{ marginLeft: '20px' }}>{running.record2}</p>
-                                <p style={{ fontSize: '15px', marginRight: '20px' }}>{running.about3}</p>
-                                <p style={{ marginLeft: '20px' }}>{running.record3}</p>
-                                <p style={{ fontSize: '15px', marginRight: '20px' }}>{running.about4}</p>
-                                <p style={{ marginLeft: '20px' }}>{running.record4}</p>
                                 <hr style={{ marginRight: '20px' }} />
                             </div>
                         ))}

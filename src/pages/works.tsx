@@ -27,6 +27,16 @@ const Works: React.FC = () => {
             about: "　ゲーム開発に興味を持ち、Unityで初めて作成したアスレチックゲーム。この取り組みからゲームの基本となる「画面遷移」「キー入力」「アイテム管理」「クリア、ミス判定」などの実装方法を学んだ。"
         },
         {
+            title: "チャットボットアプリケーション開発",
+            technical: "▫️ Python，Django，SQLite",
+            about: "　インターンシップにて業務効率の向上を目的とした，ユーザの質問に対してボットが適当な返答を行うアプリケーションを作成．ユーザが直感的に操作を行えるUI設計やDjangoフレームワークを用いたアプリケーション開発を経験することができた．"
+        },
+        {
+            title: "ホームページ",
+            technical: "▫️ TypeScript，BootStrap，Next.js，GitHub Actions",
+            about: "　講義で学んだ技術のアウトプットと自身が行ってきたことを整理することを目的とした，自身のホームページを作成．本サイトは，Next.jsフレームワークを用い，自身で作成・運用を行っている．"
+        },
+        {
             title: "半拘束型力触覚提示デバイス",
             technical: "▫️ Unity3D、Arduino UNO、Arduino IDE、フォトリフレクタ、HMD",
             image: "/images/study.png",
