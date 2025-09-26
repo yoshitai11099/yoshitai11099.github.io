@@ -46,7 +46,7 @@ const Home: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="textColor text-center mx-auto"><small>最終更新日：2025/8/4</small></div>
+      <div className="textColor text-center mx-auto"><small>最終更新日：2025/9/26</small></div>
       <div className="textColor text-center mx-auto"><small>© 2025 TAIKI YOSHIDA All Rights Reserved.</small></div>
       
     </MainLayout>
