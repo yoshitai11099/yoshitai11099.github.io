@@ -29,6 +29,17 @@ export default function RunningPage() {
                 <section className="bg-white rounded-3xl p-8 md:p-12 shadow-xl shadow-slate-200/50">
                     <div className="flex items-center mb-6">
                         <div className="w-1 h-8 bg-pink-600 rounded-full mr-4"></div>
+                        <h2 className="text-2xl font-bold">100m</h2>
+                    </div>
+                    <ul className="mt-4 space-y-2 text-base text-slate-600 font-medium">
+                        <li className="flex items-center gap-2">PB（大学以降）：12.82</li>
+                        <li className="flex items-center gap-2">大会：2026桃山チャレンジ (2026.04.12) </li>
+                    </ul>
+                </section>
+
+                <section className="mt-8 bg-white rounded-3xl p-8 md:p-12 shadow-xl shadow-slate-200/50">
+                    <div className="flex items-center mb-6">
+                        <div className="w-1 h-8 bg-pink-600 rounded-full mr-4"></div>
                         <h2 className="text-2xl font-bold">800m</h2>
                     </div>
                     <ul className="mt-4 space-y-2 text-base text-slate-600 font-medium">
