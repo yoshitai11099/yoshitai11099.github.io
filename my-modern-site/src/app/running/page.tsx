@@ -43,9 +43,9 @@ export default function RunningPage() {
                         <h2 className="text-2xl font-bold">800m</h2>
                     </div>
                     <ul className="mt-4 space-y-2 text-base text-slate-600 font-medium">
-                        <li className="flex items-center gap-2">PB（大学以前）：2.02.42</li>
-                        <li className="flex items-center gap-2">PB（大学以降）：2.05.79</li>
-                        <li className="flex items-center gap-2">大会：第75回富山県民体育大会 (2022.07.16-17) </li>
+                        <li className="flex items-center gap-2">PB（大学以前）：2:02.42</li>
+                        <li className="flex items-center gap-2">PB（大学以降）：2:01.59</li>
+                        <li className="flex items-center gap-2">大会：第31回富山カップ陸上競技大会 (2026.08.08-09) </li>
                     </ul>
                 </section>
 
@@ -55,8 +55,8 @@ export default function RunningPage() {
                         <h2 className="text-2xl font-bold">1000m</h2>
                     </div>
                     <ul className="mt-4 space-y-2 text-base text-slate-600 font-medium">
-                        <li className="flex items-center gap-2">PB（大学以降）：2.43.36</li>
-                        <li className="flex items-center gap-2">大会：2025桃山チャレンジ (2025.05.11) </li>
+                        <li className="flex items-center gap-2">PB（大学以降）：2:42.84</li>
+                        <li className="flex items-center gap-2">大会：2026桃山チャレンジ夏 (2026.08.02) </li>
                     </ul>
                 </section>
 
@@ -66,9 +66,9 @@ export default function RunningPage() {
                         <h2 className="text-2xl font-bold">1500m</h2>
                     </div>
                     <ul className="mt-4 space-y-2 text-base text-slate-600 font-medium">
-                        <li className="flex items-center gap-2">PB（大学以前）：4.14.54</li>
-                        <li className="flex items-center gap-2">PB（大学以降）：4.17.89</li>
-                        <li className="flex items-center gap-2">大会：第30回富山カップ陸上競技大会 (2025.08.09-10) </li>
+                        <li className="flex items-center gap-2">PB（大学以前）：4:14.54</li>
+                        <li className="flex items-center gap-2">PB（大学以降）：4:16.59</li>
+                        <li className="flex items-center gap-2">大会：第31回富山カップ陸上競技大会 (2026.08.08-09) </li>
                     </ul>
                 </section>
 
@@ -78,8 +78,8 @@ export default function RunningPage() {
                         <h2 className="text-2xl font-bold">3000m</h2>
                     </div>
                     <ul className="mt-4 space-y-2 text-base text-slate-600 font-medium">
-                        <li className="flex items-center gap-2">PB（大学以前）：9.51.00</li>
-                        <li className="flex items-center gap-2">PB（大学以降）：9.44.30</li>
+                        <li className="flex items-center gap-2">PB（大学以前）：9:51.00</li>
+                        <li className="flex items-center gap-2">PB（大学以降）：9:44.30</li>
                         <li className="flex items-center gap-2">大会：第33回富山マスターズ 中長距離記録会 (2025.12.07) </li>
                     </ul>
                 </section>
@@ -101,8 +101,8 @@ export default function RunningPage() {
                         <h2 className="text-2xl font-bold">フル（42.195km）</h2>
                     </div>
                     <ul className="mt-4 space-y-2 text-base text-slate-600 font-medium">
-                        <li className="flex items-center gap-2">PB（大学以降）：3:04:57</li>
-                        <li className="flex items-center gap-2">大会：第42回カーター記念黒部名水マラソン (2025.05.25)</li>
+                        <li className="flex items-center gap-2">PB（大学以降）：2:59:46</li>
+                        <li className="flex items-center gap-2">大会：第43回カーター記念黒部名水マラソン (2026.5.24)</li>
                     </ul>
                 </section>
 
